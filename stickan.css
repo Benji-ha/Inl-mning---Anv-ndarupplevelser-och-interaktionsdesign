@@ -1,0 +1,278 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-family: "Inter", sans-serif;
+}
+.main h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-box-1 {
+  grid-area: 1 / 1 / 2 / 4;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  margin-top: 1%;
+}
+
+.img-box {
+  grid-area: 1 / 1 / 2 / 2;
+  border-style: solid;
+  height: 75%;
+  width: 29%;
+  margin-top: 4%;
+  margin-left: 1%;
+  border-width: 1px;
+  transform: rotate(450deg);
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+}
+
+.text-box {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-text-box {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.book-buttons {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.booking-text {
+  margin-bottom: 0;
+  margin-top: 20%;
+}
+
+.booking-text-box {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  align-items: center;
+  margin-left: 21px;
+  margin-top: -14%;
+}
+
+/* PAGE 2 Equipment */
+
+.product-type {
+  background-color: #e5c687;
+}
+
+.equip-button,
+.equip-button-click {
+  height: 4%;
+  width: 27%;
+  margin: 2%;
+  border-radius: 1em;
+  background-color: #e5c687;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 3%;
+}
+
+.equip-button-click {
+  background-color: ffffff;
+}
+
+.product-status {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  align-items: center;
+  margin-left: 21px;
+  margin-top: 22%;
+}
+
+.equip-status-text {
+  margin-bottom: 0;
+  margin-top: 20%;
+}
+
+.equip-sub-text {
+  color: #09814a;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.product-box-2 {
+  grid-area: 2 / 1 / 3 / 4;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  margin-top: 1%;
+}
+
+.text-box-2 {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-buttons-2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.product-box-3 {
+  grid-area: 3 / 1 / 4 / 4;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  margin-top: 1%;
+}
+
+.text-box-3 {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-buttons-3 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.equip-sub-text-3 {
+  color: #ff0000;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.product-status-3 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  align-items: center;
+  margin-left: 21px;
+  margin-top: -10%;
+}
+
+.product-status-3 p {
+  margin: 0;
+}
+
+.book-button-3 {
+  height: 18%;
+  width: 82%;
+  margin: 2%;
+  margin-left: 11%;
+  margin-top: 7%;
+  border-radius: 25px;
+  background-color: #cb2222;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.product-box-4 {
+  grid-area: 4 / 1 / 5 / 4;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  margin-top: 1%;
+}
+
+.text-box-4 {
+  grid-area: 4 / 2 / 5 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-buttons-4 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+/* Utcheckning */
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.child-1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #ffffff;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+}
+
+.child-1 h2 {
+  font-size: 16px;
+}
+.child-1 p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.rent {
+  position: fixed;
+  bottom: 85px;
+  background-color: #e5c687;
+  height: 8%;
+  width: 100%;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .kvitto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 115%;
+  }
+}
+
+/* Meny sida */
+
+.meny-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5c687;
+  height: 100%;
+}
